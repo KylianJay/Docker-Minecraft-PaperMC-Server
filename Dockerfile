@@ -48,9 +48,11 @@ VOLUME "/data"
 # Expose minecraft port
 EXPOSE 25565/tcp
 EXPOSE 25565/udp
+# Expose Bluemap plugin
+EXPOSE 8123/tcp
 
 # Set memory size
-ARG memory_size=1G
+ARG memory_size=3G
 ENV MEMORYSIZE=$memory_size
 
 # Set Java Flags
